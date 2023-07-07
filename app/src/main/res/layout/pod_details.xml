@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/sheet_bg"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="#00ffffff"
+                    android:src="@drawable/line_minus_icon"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:text="PoD Details"
+                android:textColor="#454545"
+                android:textSize="@dimen/_17ssp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="POD Submission Dt."
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_12ssp" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:background="@drawable/edittext_out_fill_gray"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textColor="@color/secondry_text"
+                        android:hint="Type Here.."
+                        android:textColorHint="@color/secondry_text"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="POD Delay Penalty"
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_12ssp" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:background="@drawable/edittext_out_fill_gray"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textColor="@color/secondry_text"
+                        android:hint="Type Here.."
+                        android:textColorHint="@color/secondry_text"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="POD Incentive Dt."
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_12ssp" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:id="@+id/docket_no"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:background="@drawable/edittext_out_fill_gray"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textColor="@color/secondry_text"
+                        android:hint="Type Here.."
+                        android:textColorHint="@color/secondry_text"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="POD Incentive Amt."
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_12ssp" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:background="@drawable/edittext_out_fill_gray"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textColor="@color/secondry_text"
+                        android:hint="Type Here.."
+                        android:textColorHint="@color/secondry_text"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:text="Tracking Card No."
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_12ssp" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:background="@drawable/edittext_out_fill_wight"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textColor="@color/secondry_text"
+                        android:hint="Type Here.."
+                        android:textColorHint="@color/secondry_text"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="GPS Sr. No."
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_12ssp" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:background="@drawable/edittext_out_fill_wight"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textColor="@color/secondry_text"
+                        android:hint="Type Here.."
+                        android:textColorHint="@color/secondry_text"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="GPS Remarks"
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_12ssp" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:background="@drawable/edittext_out_fill_wight"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textColor="@color/secondry_text"
+                        android:hint="Type Here.."
+                        android:textColorHint="@color/secondry_text"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="Transit Delay Penalty"
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_12ssp" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight=".28"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:background="@drawable/edittext_out_fill_gray"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_marginEnd="@dimen/_16sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:autofillHints="Consignor"
+                            android:layout_marginLeft="5dp"
+                            android:spinnerMode="dropdown" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="@dimen/_4sdp"
+                            android:src="@drawable/spiner_down_erro" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/ok"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/blue_button"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:drawableTint="@color/white"
+                    android:onClick="bill_next"
+                    android:text="Ok"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

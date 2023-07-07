@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbg"
+    tools:context="com.ritco.operationmanagement.activitys.LoginScreen">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:id="@+id/lg"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@mipmap/logo_lg"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/login_bg"
+        android:layout_below="@id/lg">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:text="Welcome"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_17ssp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:text="Please log in to proceed..."
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_16ssp"
+            android:layout_marginEnd="@dimen/_16ssp"
+            android:background="@drawable/edit_box_weight"
+            android:inputType="textCapCharacters"
+            android:id="@+id/vehicalNo"
+            android:fontFamily="@font/roboto_medium"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColor="@color/secondry_text"
+            android:hint="Username"
+            android:textColorHint="@color/secondry_text"
+            android:textSize="@dimen/_12sdp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_16ssp"
+            android:layout_marginEnd="@dimen/_16ssp"
+            android:background="@drawable/edit_box_weight"
+            android:inputType="textCapCharacters"
+            android:fontFamily="@font/roboto_medium"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColor="@color/secondry_text"
+            android:hint="Password"
+            android:textColorHint="@color/secondry_text"
+            android:textSize="@dimen/_12sdp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:text="I agree to the Terms and Conditions"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11ssp" />
+        <TextView
+            android:id="@+id/sub"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:background="@drawable/blue_button"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:paddingEnd="@dimen/_16sdp"
+            android:drawableEnd="@drawable/next_icon"
+            android:drawableTint="@color/white"
+            android:onClick="next"
+            android:text="Get Started"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+    </LinearLayout>
+</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

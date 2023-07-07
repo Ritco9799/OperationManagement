@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#007fff</color>
+    <color name="purple_500">#007fff</color>
+    <color name="purple_700">#007fff</color>
+    <color name="teal_200">#007fff</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#C60E15</color>
+    <color name="tr_red">#26C60E15</color>
+    <color name="blue">#007fff</color>
+    <color name="tr_blue">#26007fff</color>
+    <color name="appbg">#ffffff</color>
+    <color name="primery_text">#454545</color>
+    <color name="secondry_text">#7D7D7D</color>
+    <color name="button_tint">#767676</color>
+    <color name="transeprant">#00ffffff</color>
+    <color name="border_color">#7D7D7D</color>
+    <color name="editbox_bg_color">#E5E5E5</color>
+
+    <color name="green">#09BB4C</color>
+</resources>

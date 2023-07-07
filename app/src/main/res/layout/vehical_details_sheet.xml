@@ -1,0 +1,1307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/sheet_bg"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="#00ffffff"
+                android:src="@drawable/line_minus_icon"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:text="Vehicle Details"
+            android:textColor="#454545"
+            android:textSize="@dimen/_17ssp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical"
+                    android:text="Vehicle No."
+                    android:textColor="#454545"
+                    android:textSize="@dimen/_12ssp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:id="@+id/docket_no"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:background="@drawable/edittext_out_fill_gray"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textColor="@color/secondry_text"
+                    android:hint="Type Here.."
+                    android:textColorHint="@color/secondry_text"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical"
+                    android:text="Vehicle Status"
+                    android:textColor="#454545"
+                    android:textSize="@dimen/_12ssp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:background="@drawable/edittext_out_fill_gray"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textColor="@color/secondry_text"
+                    android:hint="Type Here.."
+                    android:textColorHint="@color/secondry_text"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical"
+                    android:text="Owner Name*"
+                    android:textColor="#454545"
+                    android:textSize="@dimen/_12ssp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:id="@+id/address"
+                    android:background="@drawable/edittext_out_fill_gray"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textColor="@color/secondry_text"
+                    android:hint="Type Here.."
+                    android:textColorHint="@color/secondry_text"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:text="Owner Mobile No.*"
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_12ssp" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:background="@drawable/edittext_out_fill_wight"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textColor="@color/secondry_text"
+                        android:hint="Type Here.."
+                        android:textColorHint="@color/secondry_text"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="Owner Mobile No. 2"
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_12ssp" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:background="@drawable/edittext_out_fill_wight"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textColor="@color/secondry_text"
+                        android:hint="Type Here.."
+                        android:textColorHint="@color/secondry_text"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical"
+                    android:text="Owner PAN No.*"
+                    android:textColor="#454545"
+                    android:textSize="@dimen/_12ssp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:background="@drawable/edittext_out_fill_wight"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textColor="@color/secondry_text"
+                    android:hint="Type Here.."
+                    android:textColorHint="@color/secondry_text"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical"
+                    android:text="Date Of Birth"
+                    android:textColor="#454545"
+                    android:textSize="@dimen/_12ssp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/edittext_out_fill_gray"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:drawablePadding="@dimen/_4sdp"
+                    android:gravity="center_vertical"
+                    android:drawableEnd="@drawable/form_calendar_icon"
+                    android:textColor="@color/blue"
+                    android:hint="DD/MM/YYYY"
+                    android:textColorHint="@color/blue"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical"
+                    android:text="Type Of Sourcing"
+                    android:textColor="#454545"
+                    android:textSize="@dimen/_12ssp" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight=".28"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:background="@drawable/edittext_out_fill_gray"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_marginEnd="@dimen/_16sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:autofillHints="Consignor"
+                        android:layout_marginLeft="5dp"
+                        android:spinnerMode="dropdown" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/_4sdp"
+                        android:src="@drawable/spiner_down_erro" />
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical"
+                    android:text="Vendor Name"
+                    android:textColor="#454545"
+                    android:textSize="@dimen/_12ssp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:background="@drawable/edittext_out_fill_wight"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textColor="@color/secondry_text"
+                    android:hint="Type Here.."
+                    android:textColorHint="@color/secondry_text"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:text="Engine No.*"
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_12ssp" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:background="@drawable/edittext_out_fill_gray"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textColor="@color/secondry_text"
+                        android:hint="Type Here.."
+                        android:textColorHint="@color/secondry_text"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="Chassis No.*"
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_12ssp" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:background="@drawable/edittext_out_fill_gray"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textColor="@color/secondry_text"
+                        android:hint="Type Here.."
+                        android:textColorHint="@color/secondry_text"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="Body Type"
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_12ssp" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight=".28"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:background="@drawable/edittext_out_fill_gray"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_marginEnd="@dimen/_16sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:autofillHints="Consignor"
+                            android:layout_marginLeft="5dp"
+                            android:spinnerMode="dropdown" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="@dimen/_4sdp"
+                            android:src="@drawable/spiner_down_erro" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="Registration Date*"
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_12ssp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/edittext_out_fill_wight"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:drawablePadding="@dimen/_4sdp"
+                        android:gravity="center_vertical"
+                        android:drawableEnd="@drawable/form_calendar_icon"
+                        android:textColor="@color/blue"
+                        android:hint="DD/MM/YYYY"
+                        android:textColorHint="@color/blue"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="Carrying Capacity (MT)"
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_12ssp" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:background="@drawable/edittext_out_fill_wight"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textColor="@color/secondry_text"
+                        android:hint="Type Here.."
+                        android:textColorHint="@color/secondry_text"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="Fitness Validity*"
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_12ssp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/edittext_out_fill_wight"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:drawablePadding="@dimen/_4sdp"
+                        android:gravity="center_vertical"
+                        android:drawableEnd="@drawable/form_calendar_icon"
+                        android:textColor="@color/blue"
+                        android:hint="DD/MM/YYYY"
+                        android:textColorHint="@color/blue"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text="National Permit Vald."
+                    android:textColor="#454545"
+                    android:textSize="@dimen/_12ssp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/edittext_out_fill_wight"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:drawablePadding="@dimen/_4sdp"
+                    android:gravity="center_vertical"
+                    android:drawableEnd="@drawable/form_calendar_icon"
+                    android:textColor="@color/blue"
+                    android:hint="DD/MM/YYYY"
+                    android:textColorHint="@color/blue"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical"
+                    android:text="5 Year Validity"
+                    android:textColor="#454545"
+                    android:textSize="@dimen/_12ssp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/edittext_out_fill_wight"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:layout_marginStart="3dp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:drawablePadding="@dimen/_4sdp"
+                    android:gravity="center_vertical"
+                    android:drawableEnd="@drawable/form_calendar_icon"
+                    android:textColor="@color/blue"
+                    android:hint="DD/MM/YYYY"
+                    android:textColorHint="@color/blue"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="Policy No.*"
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_12ssp" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:background="@drawable/edittext_out_fill_wight"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textColor="@color/secondry_text"
+                        android:hint="Type Here.."
+                        android:textColorHint="@color/secondry_text"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="Insurance Validity*"
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_12ssp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/edittext_out_fill_wight"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:drawablePadding="@dimen/_4sdp"
+                        android:gravity="center_vertical"
+                        android:drawableEnd="@drawable/form_calendar_icon"
+                        android:textColor="@color/blue"
+                        android:hint="DD/MM/YYYY"
+                        android:textColorHint="@color/blue"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="Insurance Name*"
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_12ssp" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:background="@drawable/edittext_out_fill_wight"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textColor="@color/secondry_text"
+                        android:hint="Type Here.."
+                        android:textColorHint="@color/secondry_text"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="PUC Validity*"
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_12ssp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/edittext_out_fill_wight"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:drawablePadding="@dimen/_4sdp"
+                        android:gravity="center_vertical"
+                        android:drawableEnd="@drawable/form_calendar_icon"
+                        android:textColor="@color/blue"
+                        android:hint="DD/MM/YYYY"
+                        android:textColorHint="@color/blue"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/border_color"
+                android:layout_marginTop="@dimen/_16sdp"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center_vertical"
+                android:text="Upload Documents:"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:textColor="#454545"
+                android:textSize="@dimen/_16ssp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="1. PAN Copy"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_12ssp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/edittext_out_fill_gray"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:drawablePadding="@dimen/_4sdp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/blue"
+                        android:layout_weight="1"
+                        android:text="Choose File"
+                        android:textColorHint="@color/blue"
+                        android:textSize="@dimen/_8sdp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="no File"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_8ssp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="2. TDS Declaration Form*"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_12ssp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/edittext_out_fill_gray"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:drawablePadding="@dimen/_4sdp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/blue"
+                        android:layout_weight="1"
+                        android:text="Choose File"
+                        android:textColorHint="@color/blue"
+                        android:textSize="@dimen/_8sdp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="no File"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_8ssp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="3. Trace Chassis*"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_12ssp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/edittext_out_fill_gray"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:drawablePadding="@dimen/_4sdp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/blue"
+                        android:layout_weight="1"
+                        android:text="Choose File"
+                        android:textColorHint="@color/blue"
+                        android:textSize="@dimen/_8sdp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="no File"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_8ssp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="4. RC Copy*"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_12ssp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/edittext_out_fill_gray"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:drawablePadding="@dimen/_4sdp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/blue"
+                        android:layout_weight="1"
+                        android:text="Choose File"
+                        android:textColorHint="@color/blue"
+                        android:textSize="@dimen/_8sdp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="no File"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_8ssp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="5. Fitness Copy*"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_12ssp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/edittext_out_fill_gray"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:drawablePadding="@dimen/_4sdp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/blue"
+                        android:layout_weight="1"
+                        android:text="Choose File"
+                        android:textColorHint="@color/blue"
+                        android:textSize="@dimen/_8sdp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="no File"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_8ssp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="6. National Permit*"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_12ssp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/edittext_out_fill_gray"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:drawablePadding="@dimen/_4sdp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/blue"
+                        android:layout_weight="1"
+                        android:text="Choose File"
+                        android:textColorHint="@color/blue"
+                        android:textSize="@dimen/_8sdp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="no File"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_8ssp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="7. Year Permit*"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_12ssp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/edittext_out_fill_gray"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:drawablePadding="@dimen/_4sdp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/blue"
+                        android:layout_weight="1"
+                        android:text="Choose File"
+                        android:textColorHint="@color/blue"
+                        android:textSize="@dimen/_8sdp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="no File"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_8ssp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="8. Insurance Upload*"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_12ssp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/edittext_out_fill_gray"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:drawablePadding="@dimen/_4sdp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/blue"
+                        android:layout_weight="1"
+                        android:text="Choose File"
+                        android:textColorHint="@color/blue"
+                        android:textSize="@dimen/_8sdp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="no File"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_8ssp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="9. PUC Upload*"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_12ssp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/edittext_out_fill_gray"
+                        android:fontFamily="@font/roboto_regular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:drawablePadding="@dimen/_4sdp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/blue"
+                        android:layout_weight="1"
+                        android:text="Choose File"
+                        android:textColorHint="@color/blue"
+                        android:textSize="@dimen/_8sdp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:text="no File"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:textColor="#454545"
+                        android:textSize="@dimen/_8ssp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/ok"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/blue_button"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:drawableTint="@color/white"
+                android:onClick="bill_next"
+                android:text="Ok"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp" />
+        </RelativeLayout>
+    </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
